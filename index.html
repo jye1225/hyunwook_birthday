@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>26.07.10 현욱조장님 롤페</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="fireworks-canvas" id="fireworksCanvas" aria-hidden="true"></canvas>
+
+    <main>
+      <section class="celebration" aria-labelledby="birthdayTitle">
+        <img
+          class="hero-photo"
+          id="heroPhoto"
+          src="assets/developer-birthday-hero.png"
+          alt="개발자 생일 파티가 꾸며진 책상 일러스트"
+        />
+
+        <div class="hero-layout">
+          <figure class="hero-person-card">
+            <img src="assets/hyunwook-hero-birthday.png" alt="생일 파티를 하는 현욱조장님 사진" />
+          </figure>
+
+          <div class="hero-copy">
+            <p class="eyebrow">2026.07.10 금요일</p>
+            <h1 id="birthdayTitle">
+              <span>현욱조장님의</span>
+              <span class="wide-title">생일을 축하합니다</span>
+              <span class="compact-title">생일을</span>
+              <span class="compact-title">축하합니다</span>
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="paper-section" aria-labelledby="paperTitle">
+        <div class="section-heading">
+          <p class="eyebrow2">To. 생일을 맞은 현욱 조장님</p>
+          <h2 id="paperTitle">
+            <span>전도6부의 진심을 담았습니다.</span>
+          </h2>
+        </div>
+
+        <p class="paper-note">봉투를 누르면 생일 편지가 펼쳐집니다.</p>
+        <div class="envelope-grid" id="envelopeGrid"></div>
+      </section>
+
+      <section class="closing-section" aria-labelledby="closingTitle">
+        <div class="closing-copy">
+          <figure class="closing-photo">
+            <img src="assets/evangelism-team-photo.png" alt="전도6부 단체 사진" />
+          </figure>
+          <p id="closingTitle" class="closing-message">
+            사랑하는 현욱 조장님의 25번째 생일을 진심으로 축하합니다!<br />
+            하반기도 전도6부와 함께<br />
+            주님 안에 행복한 추억들 많이 쌓아봐요 :&#41;
+          </p>
+          <blockquote class="bible-verse">
+            <p>
+              그 주인이 이르되 잘하였도다 착하고 충성된 종아 네가 작은 일에 충성하였으매<br />
+              내가 많은 것으로 내게 맡기리니 네 주인의 즐거움에 참예할찌어다.
+            </p>
+            <cite>[마태복음 25:21]</cite>
+          </blockquote>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="letter-dialog" id="letterDialog" aria-labelledby="dialogTitle">
+      <article class="letter-card">
+        <button class="close-button" id="closeDialog" type="button" aria-label="편지 닫기">×</button>
+        <p class="letter-sender" id="dialogSender"></p>
+        <h3 id="dialogTitle">오늘의 편지</h3>
+        <p class="letter-message" id="dialogMessage"></p>
+      </article>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
